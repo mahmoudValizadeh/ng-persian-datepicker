@@ -1,7 +1,22 @@
 {
-  "name": "persian-datepicker",
+  "name": "mvk-persian-datepicker",
   "author": "mahmoud valizadeh",
-  "version": "0.0.1",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahmoudValizadeh/ng-persian-datepicker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mahmoudValizadeh/ng-persian-datepicker/issues"
+  },
+  "homepage": "https://github.com/mahmoudValizadeh/ng-persian-datepicker",
+  "keywords": [
+    "angular",
+    "persian",
+    "datepicker",
+    "typescript"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",
