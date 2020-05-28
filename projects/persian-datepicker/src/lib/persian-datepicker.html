@@ -1,0 +1,38 @@
+<main>
+    <div class="calendar">
+      <div class="current-indicator">
+       
+        <time>{{selectedDate.format("ddd DD MMMM")}}</time>
+        
+      </div>
+      <div class="month-indicator">
+        <div class="previous-month-indicator">
+          <span class="icon-right-open" (click)="changeNavMonth(-1,'month')"></span>
+        </div>
+        <div class="main-date-indicator">
+          <time [attr.datetime]="navDate.format('MM-YY')">{{navDate.format('MMMM YYYY')}}</time>
+        </div>
+        <div class="next-month-indicator">
+          <span class="icon-left-open" (click)="changeNavMonth(1,'month')"></span>
+        </div>
+      </div>
+      <div class="day-of-week">
+        <div *ngFor="let item of weekDaysHeaderArr">{{item}}</div>
+      </div>
+      <div class="date-grid">
+        <ng-container *ngFor="let day of gridArr">
+          
+          <button *ngIf="day.value != 0;else empty" (click)="selectDay(day)">
+            <time>{{day.value}}</time>
+          </button>
+          <ng-template #empty>
+            <span></span>
+          </ng-template>
+        </ng-container>
+      </div>
+      <div class="opreation-indicator">
+        <span class="btn-success">تایید</span>
+        <span class="btn-danger">انصراف</span>
+      </div>
+    </div>
+  </main>

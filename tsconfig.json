@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "persian-datepicker": [
+        "dist/persian-datepicker/persian-datepicker",
+        "dist/persian-datepicker"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
